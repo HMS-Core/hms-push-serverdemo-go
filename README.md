@@ -1,13 +1,13 @@
+# HMS Pushkit Go Severdemo
 # Table of Contents
 * [Introduction](#introduction)
 * [Installation](#installation)
 * [Configuration](#configuration)
-* [Supported Environments](#supported-enviroment)
 * [Sample Code](#sample-code)
 * [License](#license)
 
 
-# Introduction
+## Introduction
 Golang sample code encapsulates APIs of the HUAWEI Push Kit server. It provides many sample programs for your reference or usage.
 
 The following describes packages of Golang sample code.
@@ -17,14 +17,14 @@ The following describes packages of Golang sample code.
 |httpclient|Common package for sending network requests.|
 |push|Package where APIs of the HUAWEI Push Kit server are encapsulated.|
 
-# Installation
+## Installation
 Before using Golang sample code, check whether the Golang environment has been installed. Golang 1.11 or a later version is recommended.
 Decompress the Golang sample code package.
     
 Copy the org.huawei.com package in the decompressed folder to the project vendor directory in the path specified by GOPATH.
 Refresh the project and ensure that the file is successfully copied to the destination directory.
     
-# Configuration 
+## Configuration 
 Golang sample code uses the Client structure in the push package as the entry. Each method in the Client structure calls an API of the HUAWEI Push Kit server.
 The following describes methods in the Client structure.
 | Method   | Description |
@@ -49,7 +49,7 @@ The following table describes parameters in target.go.
 |TargetToken|Token of a target device, which is obtained from the device.|
 |TargetTokenArray|Tokens of all target devices, which are obtained from the devices.|
 
-# Sample Code
+## Sample Code
 Download Golang sample code in Downloading Server Sample Code.
 
 1). Send an Android data message.
@@ -83,6 +83,14 @@ You can send a message through the WebPush agent by setting WebPush of the messa
 8). Send a test message.
 > Code location: examples/send_test_message/main.go
 
-# License
-pushkit Go sample is licensed under the [Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+## Question or issues
+If you have questions about how to use HMS samples, try the following options:
+- [Stack Overflow](https://stackoverflow.com/questions/tagged/huawei-mobile-services) is the best place for any programming questions. Be sure to tag your question with 
+**huawei-mobile-services**.
+- [Huawei Developer Forum](https://forums.developer.huawei.com/forumPortal/en/home?fid=0101187876626530001) HMS Core Module is great for general questions, or seeking recommendations and opinions.
+
+If you run into a bug in our samples, please submit an [issue](https://github.com/HMS-Core/hms-push-serverdemo-go/issues) to the Repository. Even better you can submit a [Pull Request](https://github.com/HMS-Core/hms-push-serverdemo-go/pulls) with a fix.
+
+## License
+Pushkit Go sample is licensed under the [Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
 
