@@ -1,5 +1,5 @@
 # HMS Pushkit Go Severdemo
-# Table of Contents
+## Table of Contents
 * [Introduction](#introduction)
 * [Installation](#installation)
 * [Configuration](#configuration)
