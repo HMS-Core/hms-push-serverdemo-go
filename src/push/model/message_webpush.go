@@ -17,7 +17,7 @@ Copyright 2020. Huawei Technologies Co., Ltd. All rights reserved.
 package model
 
 import (
-	"pushkit-go-sample/push/constant"
+	"github.com/neoscott/hms-push-serverdemo-go/src/push/constant"
 	"time"
 )
 

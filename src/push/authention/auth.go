@@ -21,11 +21,11 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"github.com/neoscott/hms-push-serverdemo-go/src/httpclient"
+	"github.com/neoscott/hms-push-serverdemo-go/src/push/config"
 	"net/http"
 	"net/url"
-	"pushkit-go-sample/push/config"
 
-	"pushkit-go-sample/httpclient"
 )
 
 type AuthClient struct {

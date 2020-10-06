@@ -20,10 +20,9 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-
-	"pushkit-go-sample/examples/common"
-	"pushkit-go-sample/push/constant"
-	"pushkit-go-sample/push/model"
+	"github.com/neoscott/hms-push-serverdemo-go/src/examples/common"
+	"github.com/neoscott/hms-push-serverdemo-go/src/push/constant"
+	"github.com/neoscott/hms-push-serverdemo-go/src/push/model"
 )
 
 func main() {
