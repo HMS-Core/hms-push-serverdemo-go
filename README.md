@@ -1,4 +1,5 @@
 # HMS Pushkit Go Severdemo
+English | [中文](https://github.com/HMS-Core/hms-push-serverdemo-go/blob/master/README_ZH.md)
 ## Table of Contents
 * [Introduction](#introduction)
 * [Installation](#installation)
