@@ -1,5 +1,5 @@
 # 华为推送服务服务端Golang示例代码
-
+[English](https://github.com/HMS-Core/hms-push-serverdemo-go) | 中文
 ## 目录
  * [简介](#简介)
  * [安装](#安装)
