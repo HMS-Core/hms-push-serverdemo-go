@@ -86,6 +86,13 @@ func (c *HttpPushClient) refreshToken() error {
 	return nil
 }
 
+func (c *HttpPushClient) resetHTTPHeader(request *httpclient.PushRequest) *httpclient.PushRequest {
+	request.Header = []httpclient.HTTPOption{
+		httpclient.SetHeader("Content-Type", "application/json;charset=utf-8"),
+		httpclient.SetHeader("Authorization", "Bearer "+c.token),
+	}
+	return request
+}
 func (c *HttpPushClient) executeApiOperation(ctx context.Context, request *httpclient.PushRequest, responsePointer interface{}) error {
 	err := c.sendHttpRequest(ctx, request, responsePointer)
 	if err != nil {
@@ -99,6 +106,7 @@ func (c *HttpPushClient) executeApiOperation(ctx context.Context, request *httpc
 	}
 
 	if retry {
+		c.resetHTTPHeader(request)
 		err = c.sendHttpRequest(ctx, request, responsePointer)
 		return err
 	}

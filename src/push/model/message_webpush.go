@@ -78,7 +78,7 @@ func getDefaultHeaders() *WebPushHeaders {
 
 func getDefaultHmsOptions() *HmsWebPushOption {
 	return &HmsWebPushOption{
-		Link: "https://www.huawei.com",
+		Link: "Your test url",
 	}
 }
 
