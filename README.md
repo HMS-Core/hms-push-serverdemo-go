@@ -36,7 +36,7 @@ The following table describes the parameters in **pushcommon.go**.
 | ----------- | ----------- |
 |appId|App ID, which is obtained from the app information.|
 |appSecret|App secret, which is obtained from the app information.|
-|authUrl|URL for Huawei OAuth 2.0 to obtain a token. For details, please refer to [OAuth 2.0-based Authentication](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/oauth2-0000001212610981?ha_source=hms1).|
+|authUrl|URL for Huawei OAuth 2.0 to obtain a token. For details, please refer to [OAuth 2.0-based Authentication](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/oauth2-0000001212610981).|
 |pushUrl|Access address of Push Kit. For details, please refer to [Downlink Message Sending](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/android-server-dev-0000001050040110?ha_source=hms1).|
 
 The following table describes the parameters in **target.go**.
