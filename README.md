@@ -5,6 +5,7 @@ English | [中文](README_ZH.md)
  * [Installation](#Installation)
  * [Configuration](#Configuration)
  * [Sample Code](#Sample-Code)
+ * [Technical Support](#technical-support)
  * [License](#License)
 
 ## Introduction
