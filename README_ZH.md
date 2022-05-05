@@ -51,36 +51,38 @@ target.go中参数说明：
 
 ## 示例代码
 
-1). 发送Android透传消息。
-通过push/model包中的NewTransparentMsgRequest方法获取初始化的透传消息的MessageRequest实例。
-文件目录：examples/send_data_message/main.go
-    
-2). 发送Android通知栏消息。
-通过push/model包中的NewNotificationMsgRequest方法获取初始化的透传消息的MessageRequest实例。
-文件目录：examples/send_notify_message/main.go
-    
-3). 基于主题发送消息。基于主题发送通知栏消息或透传消息。
-获取MessageRequest实例后可定制主题。
-文件目录：examples/send_topic_message/main.go
-    
-4). 基于条件发送消息。
-基于条件发送通知栏消息或透传消息。获取MessageRequest实例后可定制条件。
-文件目录：examples/send_condition_message/main.go
-    
-5). 向华为快应用发送消息。
-通过设置FastAppTarget属性来实现。
-文件目录：examples/send_instance_app_message/main.go
-    
-6). 基于APNs代理发送消息。
-通过设置消息的Apns属性来实现。
-文件目录：examples/send_apns_message/main.go
-    
-7). 基于WebPush代理发送消息。
-通过设置消息的WebPush属性来实现。
-文件目录：examples/send_webpush_message/main.go
-    
-8). 发送测试消息。
-文件目录：examples/send_test_message/main.go
+本示例代码以push_admin包中的Application结构体为入口。Application结构体中的核心方法完成了对推送服务服务端接口的调用。
+Application包括如下方法：
+
+| 方法             | 说明
+| :---               | :---
+| __push_send_msg__   | 向设备发送消息
+| __common_send_msg__ | 订阅主题、退订主题、查询设备订阅的主题列表
+| ____construc__      | 构造函数，获取发送消息的关键数据
+
+#### 1.	发送Android透传消息
+代码位置: [examples/test_sample_push_passthrouth_msg.php](src/example/test_sample_push_passthrouth_msg.php)             
+
+#### 2.	发送Android通知栏消息
+代码位置: [examples/test_sample_push_notification_msg.php](src/example/test_sample_push_notification_msg.php)
+
+#### 3.	基于主题发送消息
+代码位置: [examples/test_sample_push_topic_msg.php](src/example/test_sample_push_topic_msg.php)
+
+#### 4.	基于条件发送消息 
+代码位置: [examples/test_sample_push_condition_msg.php](src/example/test_sample_push_condition_msg.php)  
+
+#### 5.	向华为快应用发送消息 
+代码位置: [examples/test_sample_push_instantce_app_msg.php](src/example/test_sample_push_instantce_app_msg.php)
+
+#### 6.	基于WebPush代理发送消息
+代码位置: [examples/test_sample_push_webpush_msg.php](src/example/test_sample_push_webpush_msg.php)
+
+#### 7.	基于APNs代理发送消息
+代码位置: [examples/test_sample_apns_msg.php](src/example/test_sample_apns_msg.php)
+
+#### 8.	发送测试消息.  
+代码位置: [examples/test_sample_test_push_msg.php](src/example/test_sample_test_push_msg.php)
 
 ## 技术支持
 如果您对HMS Core还处于评估阶段，可在[Reddit社区](https://www.reddit.com/r/HuaweiDevelopers/)获取关于HMS Core的最新讯息，并与其他开发者交流见解。
