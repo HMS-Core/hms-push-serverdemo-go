@@ -31,7 +31,7 @@ const (
 
 	// below is public address
 	// get token address
-	authUrl   = "https://login.cloud.huawei.com/oauth2/v2/token"
+	authUrl   = "https://login.cloud.huawei.com/oauth2/v3/token"
 	// send push msg address
 	pushUrl   = "https://api.push.hicloud.com"
 )
