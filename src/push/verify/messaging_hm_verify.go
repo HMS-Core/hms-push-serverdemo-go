@@ -108,7 +108,7 @@ func validateAndroidNotifyPriority(notification *model.AndroidNotification) erro
 	if notification.Importance != "" &&
 		notification.Importance != constant.NotificationPriorityHigh &&
 		notification.Importance != constant.NotificationPriorityDefault &&
-		notification.Importance != constant.NotificationPriorityLow  {
+		notification.Importance != constant.NotificationPriorityLow {
 		return errors.New("Importance must be 'HIGH', 'NORMAL' or 'LOW'")
 	}
 	return nil
@@ -174,11 +174,6 @@ func validateClickAction(clickAction *model.ClickAction) error {
 	case constant.TypeUrl:
 		if clickAction.Url == "" {
 			return errors.New("url must not be empty when type is 2")
-		}
-	case constant.TypeApp:
-	case constant.TypeRichResource:
-		if clickAction.RichResource == "" {
-			return errors.New("rich_resource must not be empty when type is 4")
 		}
 	default:
 		return errors.New("type must be in the interval [1 - 4]")
