@@ -50,36 +50,36 @@ The following table describes the parameters in **target.go**.
 
 ## Sample Code
 
-1. Send a data message to an Android app.
-  You can obtain the initialized **MessageRequest** instance of the data message using the **NewTransparentMsgRequest** method in the **push** > **model** package.
-  File path: **examples/send_data_message/main.go**
-  
-2. Send a notification message to an Android app.
-  You can obtain the initialized **MessageRequest** instance of the data message using the **NewNotificationMsgRequest** method in the **push** > **model** package.
-  File path: **examples/send_notify_message/main.go**
-  
-3. Send a message by topic. You can send a notification or data message by topic.
-  After obtaining the **MessageRequest** instance, you can customize a topic.
-  File path: **examples/send_topic_message/main.go**
-  
-4. Send a message by condition.
-  You can send a notification or data message by condition. After obtaining the **MessageRequest** instance, you can customize a condition.
-  File path: **examples/send_condition_message/main.go**
-  
-5. Send a message to a Huawei quick app.
-  You can set the **FastAppTarget** attribute for this messaging.
-  File path: **examples/send_instance_app_message/main.go**
-  
-6. Send a message by APNs.
-  You can set the **Apns** attribute for this messaging.
-  File path: **examples/send_apns_message/main.go**
-  
-7. Send a message by WebPush.
-  You can set the **WebPush** attribute for this messaging.
-  File path: **examples/send_webpush_message/main.go**
-  
-8. Send a test message.
-File path: **examples/send_test_message/main.go**
+1). Send an Android data message.
+You can obtain the initialized MessageRequest instance of the data message using the NewTransparentMsgRequest method in the push/model package.
+> Code location: [send_data_message](src/examples/send_data_message/main.go)
+    
+2). Send an Android notification message.
+You can obtain the initialized MessageRequest instance of the notification message using the NewNotificationMsgRequest method in the push/model package.
+> Code location: [send_notify_message](src/examples/send_notify_message/main.go)
+    
+3). Send a message by topic.
+You can send a notification message or data message to a device by topic. Specify the topic after obtaining the MessageRequest instance.
+> Code location: [send_topic_message](src/examples/send_topic_message/main.go)
+    
+4). Send a message by conditions.
+You can send a notification message or data message to a device by conditions. Specify the conditions after obtaining the MessageRequest instance.
+> Code location: [send_condition_message](src/examples/send_condition_message/main.go)
+    
+5). Send a message to a Huawei quick app.
+You can send a message to a quick app by setting FastAppTarget.
+> Code location: [send_instance_app_message](src/examples/send_instance_app_message/main.go)
+    
+6). Send a message through the APNs agent.
+You can send a message through the APNs agent by setting Apns of the message.
+> Code location: [send_apns_message](src/examples/send_apns_message/main.go)
+    
+7). Send a message through the WebPush agent.
+You can send a message through the WebPush agent by setting WebPush of the message.
+> Code location: [send_webpush_message](src/examples/send_webpush_message/main.go)
+    
+8). Send a test message.
+> Code location: [send_test_message](src/examples/send_test_message/main.go)
 
 ## Technical Support
 You can visit the [Reddit community](https://www.reddit.com/r/HuaweiDevelopers/) to obtain the latest information about HMS Core and communicate with other developers.
