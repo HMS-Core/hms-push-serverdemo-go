@@ -14,9 +14,9 @@ The sample code for Golang encapsulates the server-side APIs of Push Kit, for yo
 The following table describes packages of Golang sample code.
 | Package| Description|
 | ----------- | ----------- |
-|examples|Sample code packages.|
-|httpclient|Package for sending network requests.|
-|push|Package where Push Kit server APIs are encapsulated.|
+|[examples](src/examples) | Sample code packages.|
+|[httpclient](src/httpclient/httpclient.go) | Package for sending network requests.|
+|[push](src/push) | Package where Push Kit server APIs are encapsulated.|
 
 ## Installation
 Install the Golang environment (Golang 1.11 or later is recommended) and decompress the Golang sample code package.
