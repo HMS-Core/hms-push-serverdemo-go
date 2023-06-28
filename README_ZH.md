@@ -15,9 +15,9 @@ Golang示例代码对华为推送服务（HUAWEI Push Kit）服务端接口进�
 示例代码目录结构如下：
 | 包名   | 说明 |
 | ----------- | ----------- |  
-|examples|示例代码包|
-|httpclient|发送网络请求包|
-|push|服务端接口封装包|
+|[examples](src/examples) | 示例代码包|
+|[httpclient](src/httpclient/httpclient.go) | 发送网络请求包|
+|[push](src/push) | 服务端接口封装包|
 
 ## 安装
 使用Golang示例代码前，请确认您已安装Golang开发环境（推荐使用Golang 1.11或以上版本），并解压Golang示例代码包。
