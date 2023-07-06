@@ -31,9 +31,9 @@ Client结构体包含以下方法：
 | ----------- | ----------- |    
 |SendMessage|   向设备发送消息|
 
-如需使用examples中的功能，请在公共包中的pushcommon.go中设置相关参数。
+如需使用examples中的功能，请在公共包中的[pushcommon.go](src/examples/common/pushcommon.go)中设置相关参数。
 
-pushcommon.go中参数说明：
+[pushcommon.go](src/examples/common/pushcommon.go)中参数说明：
 | 参数   | 说明 |
 | ----------- | ----------- |
 |appId|应用ID，从应用信息中获取|
@@ -41,7 +41,7 @@ pushcommon.go中参数说明：
 |authUrl|华为OAuth 2.0获取token的地址。详情请参见[基于OAuth 2.0开放鉴权-客户端模式](https://developer.huawei.com/consumer/cn/doc/development/HMSCore-Guides/oauth2-0000001212610981)。|
 |pushUrl|推送服务的访问地址。详情请参见[推送服务-下行消息](https://developer.huawei.com/consumer/cn/doc/development/HMSCore-Guides/android-server-dev-0000001050040110?ha_source=hms1)。|
 
-target.go中参数说明：
+[pushcommon.go](src/examples/common/pushcommon.go)中参数说明：
 | 参数   | 说明 |
 | ----------- | ----------- | 
 |TargetTopic|订阅、退订或查询的主题名称|
